@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+
+
+
+div.clearfix{border-color:grey;
+    border-width:30px 120px 30px 120px;
+    border-style:solid;
+     max-width: 1000px;
+    overflow:auto;}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav li {
+    float: left;
+    list-style-type:none;
+}
+
+.nav li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.list{display:inline-block;
+      font:italic;}
+
+.rite{ max-width: 100%;
+    height: auto;}
+
+.type{ max-width: 100%;
+    height: auto;}
+    
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 33.33% ;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 50%;}
+.col-m-9 {width: 33.33%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 33.33% ;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 50%;}
+.col-9 {width: 33.33%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+}
+</style>
+</head>
+<body>
+
+<div class="clearfix">
+
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+
+
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9 col-m-3">
+  <h1>The City</h1>
+  <p>chania lol is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+
+    
+
+
+    <div class="col-4 col-m-4 list">
+<ul class="ger">
+    <li>Vancouver</li>
+    <li>Richmond</li>
+    <li>Burnaby</li>
+    <li>Coquitlam</li>
+    <li>Port Coquitlam</li>
+    <li>Port Moody</li>
+    <li>New Westminster</li>
+    <li>North Shore</li>
+    <li>Surrey</li>
+    <li>Delta</li>
+    <li>Tsawwassen</li>
+  </ul>
+    </div>
